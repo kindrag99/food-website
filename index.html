@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="image/abah.png">
+            </div>
+
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Kontak">Kontak</a></li>
+            </ul>
+
+            <ul class="login">
+                <a href="logout.html" id="loginLink">Logout</a>
+            </ul>
+            
+        </nav>
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1>Get Fresh<span>Food</span><br>in a Easy Way</h1>
+            </div>
+
+            <div class="main_image">
+                <img src="image/maranggi.png">
+            </div>
+
+        </div>
+
+        <p>
+            Rumah Makan Lesehan Abah Ambu berdiri sejak 10 Maret 2019 dengan konsep lesehan khas Sunda, menawarkan
+            pengalaman kuliner yang nyaman dan akrab. Berawal dari inisiatif keluarga besar, nama "Abah Ambu" diambil
+            untuk menghormati figur keluarga yang hangat dan ramah.
+
+            Rumah makan ini menyajikan hidangan berkualitas dari bahan segar, dengan menu khas seperti nasi liwet, ikan
+            bakar, sate, dan lalapan. Awalnya hanya memiliki beberapa saung, kini fasilitasnya meliputi mushola, area
+            bermain anak, dan lebih banyak saung.
+        </p>
+
+    </section>
+
+    <script>
+        // Memeriksa apakah pengguna sudah login
+        if (localStorage.getItem('loggedIn') !== 'true') {
+            // Jika tidak login, arahkan ke halaman login
+            window.location.href = 'login.html';
+        }
+
+        // Menampilkan teks "Logout" jika pengguna sudah login
+        document.getElementById('loginLink').innerHTML = "Logout";
+    </script>
+
+    <!--About-->
+    <div class="about" id="About">
+        <div class="about_main">
+            <div class="image">
+                <img src="image/sopiga.png" alt="About Us Image">
+            </div>
+            <div class="about_text">
+                <h1><span>About</span> Us</h1>
+                <h3>Why Choose Us?</h3>
+                <p>
+                    Melalui inovasi layanan, media sosial, dan pesan antar, Rumah Makan Lesehan Abah Ambu menjadi
+                    destinasi kuliner favorit yang terus menjaga kualitas dan kehangatan pelayanan.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Gallery-->
+    <div class="gallery" id="Gallery">
+        <h1><span>Gallery</span></h1>
+        <div class="gallery_image_box">
+            <div class="gallery_image">
+                <img src="image/geprek.jpeg" alt="Geprek">
+            </div>
+            <div class="gallery_image">
+                <img src="image/bakakak.jpeg" alt="Bakakak">
+            </div>
+            <div class="gallery_image">
+                <img src="image/mie.jpeg" alt="Mie">
+            </div>
+            <div class="gallery_image">
+                <img src="image/sayur.jpeg" alt="Sayur">
+            </div>
+            <div class="gallery_image">
+                <img src="image/telor.jpeg" alt="Telor">
+            </div>
+            <div class="gallery_image">
+                <img src="image/ikan.jpeg" alt="Ikan">
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontak -->
+    <div class="kontak" id="Kontak">
+        <h1><span>Kontak dan Alamat</span> Kami</h1>
+
+        <div class="kontak_main">
+            <div class="kontak_image">
+                <img src="image/order_image.png" alt="Order Image" class="order-image">
+            </div>
+
+            <form action="#">
+                <!-- Phone Numbers Section -->
+                <div class="phone_numbers">
+                    <img src="image/call.png" alt="Call Image" class="call-image">
+                    <h1>Whatsapp 089651933559</h1>
+                    <h1>Whatsapp 081556427680</h1>
+                </div>
+
+                <!-- Address Section -->
+                <div class="address">
+                    <h2>Alamat Kami</h2>
+                    <p>Jl. Pemuda II, kp. cipamangkat, RT.15/RW.08, Pasawahan, Kec. Pasawahan, Kabupaten Purwakarta,
+                        Jawa Barat 41172</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
